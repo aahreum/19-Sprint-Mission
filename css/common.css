@@ -1,0 +1,39 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-100);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--primary-200);
+}
+
+.button:disabled {
+  background-color: var(--gray-400);
+  color: var(--gray-100);
+  cursor: default;
+}
+
+.none {
+  display: none;
+}

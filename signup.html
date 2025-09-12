@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.svg" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/auth-style.css" />
+    <title>판다마켓 - 회원가입</title>
+  </head>
+  <body>
+    <main class="auth-container">
+      <a href="/">
+        <img src="./images/logo.svg" alt="판다마켓 로고" class="logo-img" />
+      </a>
+      <form class="auth-form" name="signup">
+        <div class="auth-input-area">
+          <label for="email" class="auth-label">이메일</label>
+          <input
+            id="email"
+            class="auth-input"
+            type="email"
+            name="email"
+            placeholder="이메일을 입력해주세요."
+            autocomplete="email"
+          />
+          <span class="auth-input-errorMsg none"></span>
+        </div>
+        <div class="auth-input-area">
+          <label for="nickname" class="auth-label">닉네임</label>
+          <input
+            id="nickname"
+            class="auth-input"
+            type="text"
+            name="nickname"
+            placeholder="닉네임을 입력해주세요."
+            autocomplete="username"
+          />
+          <span class="auth-input-errorMsg none"></span>
+        </div>
+        <div class="auth-input-area">
+          <label for="password" class="auth-label">비밀번호</label>
+          <div class="password-input-area">
+            <input
+              id="password"
+              class="auth-input"
+              type="password"
+              name="password"
+              placeholder="비밀번호를 입력해주세요."
+              autocomplete="new-password"
+            />
+            <button class="show-password-button" type="button" aria-label="비밀번호 보기"></button>
+          </div>
+          <span class="auth-input-errorMsg none"></span>
+        </div>
+        <div class="auth-input-area">
+          <label for="confirm-password" class="auth-label">비밀번호 확인</label>
+          <div class="password-input-area">
+            <input
+              id="confirm-password"
+              class="auth-input"
+              type="password"
+              name="confirmPassword"
+              placeholder="비밀번호를 한 번 더 입력해주세요."
+              autocomplete="new-password"
+            />
+            <button class="show-password-button" type="button" aria-label="비밀번호 보기"></button>
+          </div>
+          <span class="auth-input-errorMsg none"></span>
+        </div>
+        <button type="submit" disabled class="button auth-button">회원가입</button>
+      </form>
+      <div class="sns-login-area">
+        <span class="sns-login-text">간편 로그인하기</span>
+        <a class="sns-login-link" href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+          <img class="sns-login-img" src="./images/auth/google.png" alt="구글 로그인" />
+        </a>
+        <a class="sns-login-link" href="https://www.kakaocorp.com/page/" target="_blank" rel="noopener noreferrer">
+          <img class="sns-login-img" src="./images/auth/kakao.png" alt="카카오 로그인" />
+        </a>
+      </div>
+      <div class="auth-guide-area">
+        <span class="auth-guide-text">이미 회원이신가요?</span><a class="auth-guide-link" href="./login.html">로그인</a>
+      </div>
+    </main>
+    <script type="module" src="./js/auth-handlers.js"></script>
+  </body>
+</html>
