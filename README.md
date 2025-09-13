@@ -1,4 +1,4 @@
-# Basic Sprint Misson 1
+# Basic Sprint Mission 1
 
 ## 요구사항
 
@@ -19,7 +19,7 @@
 
 - [x] 사용자의 브라우저가 크고 작아짐에 따라 페이지의 요소간 간격, 요소의 크기, font-size 등 모든 크기와 관련된 값이 크고 작아지도록 설정해 보세요.(설정값은 자유입니다)
 
-# Basic Sprint Misson 2
+# Basic Sprint Mission 2
 
 ## 요구사항
 
@@ -45,7 +45,7 @@
 - [x] palette에 있는 color값들을 css 변수로 등록하고 사용해 주세요.
 - [x] 비밀번호 input 요소 위에 비밀번호를 확인할 수 있는 아이콘을 추가해 주세요.
 
-# Basic Sprint Misson 3
+# Basic Sprint Mission 3
 
 ## 요구사항
 
@@ -83,7 +83,7 @@
 - [x] 미리보기에서 제목은 “판다 마켓”, 설명은 “일상의 모든 물건을 거래해보세요”로 설정합니다.
 - [x] 주소와 이미지는 자유롭게 설정하세요.
 
-# Basic Sprint Misson 4
+# Basic Sprint Mission 4
 
 ## 요구사항
 
