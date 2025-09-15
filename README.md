@@ -1,4 +1,4 @@
-# Basic Sprint Misson 1
+# Basic Sprint Mission 1
 
 ## 요구사항
 
