@@ -1,3 +1,18 @@
+# React Sprint Mission 8
+
+## 요구사항
+
+### 체크리스트 [기본]
+
+- [ ] Github에 PR(**P**ull **R**equest)을 만들어서 미션을 제출합니다.
+- [ ] 피그마 디자인에 맞게 페이지를 만들어 주세요.
+- [ ] Typescript를 사용합니다
+- [ ] 네모 박스 안의 화면을 TypeScript로 마이그레이션해 주세요.
+
+### 체크리스트 [심화]
+
+- [ ] any 타입을 최소한을 써주세요.
+
 # React Sprint Mission 7
 
 ## 요구사항
