@@ -1,4 +1,16 @@
-const DropdownButton = ({ children, onClick, className, ariaLabel }) => {
+interface DropdownButtonProps {
+  children: React.ReactNode;
+  className?: string;
+  ariaLabel: string;
+  onClick: () => void;
+}
+
+const DropdownButton = ({
+  children,
+  onClick,
+  className,
+  ariaLabel,
+}: DropdownButtonProps) => {
   return (
     <button
       type="button"

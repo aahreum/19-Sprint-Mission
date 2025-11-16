@@ -3,7 +3,11 @@ import DropdownButton from './DropdownButton';
 import DropdownItem from './DropdownItem';
 import DropdownList from './DropdownList';
 
-const Dropdown = ({ children }) => {
+interface DropdownProps {
+  children: React.ReactNode;
+}
+
+const Dropdown = ({ children }: DropdownProps) => {
   return <div className={styles.container}>{children}</div>;
 };
 

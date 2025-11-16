@@ -1,7 +1,17 @@
 import classNames from 'classnames';
 import styles from './Dropdown.module.css';
 
-const DropdownItem = ({ children, onClick, className }) => {
+interface DropdownItemProps {
+  children: React.ReactNode;
+  onClick: () => void;
+  className?: string;
+}
+
+const DropdownItem = ({
+  children,
+  onClick,
+  className = '',
+}: DropdownItemProps) => {
   return (
     <li
       className={classNames(styles['list-item'], className)}
