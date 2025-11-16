@@ -55,7 +55,7 @@ const AddItemForm = () => {
         />
 
         <div className={styles['input-area']}>
-          <Label id="name" label="상품명" />
+          <Label htmlFor="name">상품명</Label>
           <Input
             id="name"
             placeholder="상품명을 입력해주세요"
@@ -65,7 +65,7 @@ const AddItemForm = () => {
         </div>
 
         <div className={styles['input-area']}>
-          <Label id="description" label="상품 소개" />
+          <Label htmlFor="description">상품 소개</Label>
           <Textarea
             id="description"
             placeholder="상품 소개를 입력해주세요"
@@ -75,7 +75,7 @@ const AddItemForm = () => {
         </div>
 
         <div className={styles['input-area']}>
-          <Label id="price" label="판매가격" />
+          <Label htmlFor="price">판매가격</Label>
           {/* TODO: 숫자만 입력 가능하다고 안내 필요 */}
           <Input
             type="number"

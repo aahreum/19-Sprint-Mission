@@ -37,7 +37,7 @@ const TagInput = ({ id, value, onChange }) => {
 
   return (
     <div className={styles.container}>
-      <Label id={id} label="태그" />
+      <Label htmlFor={id}>태그</Label>
       <Input
         id={id}
         placeholder="태그를 입력해주세요"

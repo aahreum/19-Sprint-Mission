@@ -51,7 +51,7 @@ const ImageFileInput = ({ name, value, onChange }) => {
   return (
     <div className={styles.container}>
       <div className={styles['input-area']}>
-        <Label label={'상품 이미지'} />
+        <Label htmlFor="image">상품 이미지</Label>
         <button
           type="button"
           className={`${styles['custom-file-button']} ${styles['common-layout']}`}
@@ -60,6 +60,7 @@ const ImageFileInput = ({ name, value, onChange }) => {
           이미지 등록
         </button>
         <input
+          id="image"
           className={styles['file-input']}
           type="file"
           onChange={handleFileInputChange}

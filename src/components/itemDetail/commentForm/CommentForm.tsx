@@ -16,7 +16,9 @@ const CommentForm = () => {
 
   return (
     <form className={styles.container} onSubmit={handleSubmit}>
-      <Label id="question" label="문의하기" className={styles.label} />
+      <Label htmlFor="question" className={styles.label}>
+        문의하기
+      </Label>
       <Textarea
         id="question"
         className={styles.textarea}

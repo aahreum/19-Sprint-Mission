@@ -1,10 +1,16 @@
 import classNames from 'classnames';
 import styles from './Label.module.css';
 
-const Label = ({ id, label, className }) => {
+interface LabelProps {
+  htmlFor: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+const Label = ({ htmlFor, children, className = '' }: LabelProps) => {
   return (
-    <label htmlFor={id} className={classNames(styles.label, className)}>
-      {label}
+    <label htmlFor={htmlFor} className={classNames(styles.label, className)}>
+      {children}
     </label>
   );
 };

@@ -23,7 +23,7 @@ const AuthInput = ({
 
   return (
     <div className={styles.container}>
-      <Label id={id} label={label} />
+      <Label htmlFor={id}>{label}</Label>
       <div className={styles['input-area']}>
         <Input
           id={id}
