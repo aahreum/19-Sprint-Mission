@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import Icons from '@/assets/icons';
+import { icons } from '@/assets/icons';
 import Label from '@/components/common/label/Label';
 import styles from './ImageFileInput.module.css';
 
@@ -56,7 +56,7 @@ const ImageFileInput = ({ name, value, onChange }) => {
           type="button"
           className={`${styles['custom-file-button']} ${styles['common-layout']}`}
           onClick={handleFileInputClick}>
-          <Icons.PlusIcon />
+          <icons.PlusIcon />
           이미지 등록
         </button>
         <input
@@ -76,7 +76,7 @@ const ImageFileInput = ({ name, value, onChange }) => {
             type="button"
             className={styles['remove-button']}
             onClick={handleResetFileInput}>
-            <Icons.RemoveIcon />
+            <icons.RemoveIcon />
           </button>
           <img
             className={styles['preview-img']}

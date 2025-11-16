@@ -1,4 +1,4 @@
-import icons from '@/assets/icons';
+import { icons } from '@/assets/icons';
 import Input from '@/components/common/input/Input';
 import Label from '@/components/common/label/Label';
 import useAuthForm from '@/hooks/useAuthForm';

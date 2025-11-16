@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Link, useParams } from 'react-router';
-import Icons from '@/assets/icons';
+import { icons } from '@/assets/icons';
 import Button from '@/components/common/button/Button';
 import CommentForm from '@/components/itemDetail/commentForm/CommentForm';
 import CommentList from '@/components/itemDetail/commentList/CommentList';
@@ -88,7 +88,7 @@ const ItemDetail = () => {
       </div>
       <Button as={Link} to={'/items'} size="m">
         목록으로 돌아가기
-        <Icons.BackIcon />
+        <icons.BackIcon />
       </Button>
     </div>
   );

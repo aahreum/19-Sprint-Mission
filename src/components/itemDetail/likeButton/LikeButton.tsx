@@ -1,4 +1,4 @@
-import icons from '@/assets/icons';
+import { icons } from '@/assets/icons';
 import styles from './LikeButton.module.css';
 
 const LikeButton = ({ favoriteCount, isFavorite }) => {

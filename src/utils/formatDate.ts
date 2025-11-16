@@ -1,4 +1,6 @@
-export const formatDate = (isoDate) => {
+type isoDate = string | Date;
+
+export const formatDate = (isoDate: isoDate) => {
   if (!isoDate) {
     return '';
   }
@@ -24,7 +26,7 @@ export const formatDate = (isoDate) => {
   return `${year}. ${month}. ${day}`;
 };
 
-export const formatTimeCalculation = (isoDate) => {
+export const formatTimeCalculation = (isoDate: isoDate) => {
   const now = new Date();
   const updatedAt = new Date(isoDate);
 

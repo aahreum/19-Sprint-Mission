@@ -1,4 +1,4 @@
-import Icons from '@/assets/icons';
+import { icons } from '@/assets/icons';
 import styles from './TagItem.module.css';
 
 const TagItem = ({ tag, onClick }) => {
@@ -10,7 +10,7 @@ const TagItem = ({ tag, onClick }) => {
           className={styles['remove-button']}
           type="button"
           onClick={() => onClick(tag)}>
-          <Icons.RemoveIcon />
+          <icons.RemoveIcon />
         </button>
       )}
     </li>

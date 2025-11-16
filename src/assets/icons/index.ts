@@ -1,37 +1,40 @@
-import ArrowDownIcon from '@/assets/icons/ic-arrow-down.svg';
-import ArrowLeftIcon from '@/assets/icons/ic-arrow-left.svg';
-import ArrowRightIcon from '@/assets/icons/ic-arrow-right.svg';
-import BackIcon from '@/assets/icons/ic-back.svg';
-import facebookIcon from '@/assets/icons/ic-facebook.svg?url';
-import HeartActiveIcon from '@/assets/icons/ic-heart-active.svg';
-import HeartIcon from '@/assets/icons/ic-heart.svg';
-import instgramIcon from '@/assets/icons/ic-instagram.svg?url';
-import KebabIcon from '@/assets/icons/ic-kebab.svg';
-import PlusIcon from '@/assets/icons/ic-plus.svg';
-import RemoveIcon from '@/assets/icons/ic-remove.svg';
-import SearchIcon from '@/assets/icons/ic-search.svg';
-import SortIcon from '@/assets/icons/ic-sort.svg';
-import twitterIcon from '@/assets/icons/ic-twitter.svg?url';
-import HidePasswordIcon from '@/assets/icons/ic-visibility-off.svg';
-import ShowPasswordIcon from '@/assets/icons/ic-visibility-on.svg';
-import youtubeIcon from '@/assets/icons/ic-youtube.svg?url';
+import { ReactComponent as ArrowDownIcon } from './ic-arrow-down.svg';
+import { ReactComponent as ArrowLeftIcon } from './ic-arrow-left.svg';
+import { ReactComponent as ArrowRightIcon } from './ic-arrow-right.svg';
+import { ReactComponent as BackIcon } from './ic-back.svg';
+import facebookIcon from './ic-facebook.svg?url';
+import { ReactComponent as HeartActiveIcon } from './ic-heart-active.svg';
+import { ReactComponent as HeartIcon } from './ic-heart.svg';
+import instgramIcon from './ic-instagram.svg?url';
+import { ReactComponent as KebabIcon } from './ic-kebab.svg';
+import { ReactComponent as PlusIcon } from './ic-plus.svg';
+import { ReactComponent as RemoveIcon } from './ic-remove.svg';
+import { ReactComponent as SearchIcon } from './ic-search.svg';
+import { ReactComponent as SortIcon } from './ic-sort.svg';
+import twitterIcon from './ic-twitter.svg?url';
+import { ReactComponent as HidePasswordIcon } from './ic-visibility-off.svg';
+import { ReactComponent as ShowPasswordIcon } from './ic-visibility-on.svg';
+import youtubeIcon from './ic-youtube.svg?url';
 
-export default {
+export const icons = {
   ArrowDownIcon,
   ArrowLeftIcon,
   ArrowRightIcon,
-  facebookIcon,
-  instgramIcon,
-  SearchIcon,
-  twitterIcon,
-  youtubeIcon,
-  HidePasswordIcon,
-  ShowPasswordIcon,
+  BackIcon,
+  HeartActiveIcon,
   HeartIcon,
-  SortIcon,
-  RemoveIcon,
   KebabIcon,
   PlusIcon,
-  HeartActiveIcon,
-  BackIcon,
+  RemoveIcon,
+  SearchIcon,
+  SortIcon,
+  HidePasswordIcon,
+  ShowPasswordIcon,
+};
+
+export const iconsUrl = {
+  facebookIcon,
+  instgramIcon,
+  twitterIcon,
+  youtubeIcon,
 };

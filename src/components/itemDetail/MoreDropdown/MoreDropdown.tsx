@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Icons from '@/assets/icons';
+import { icons } from '@/assets/icons';
 import Dropdown from '@/components/common/dropdown/Dropdown';
 import styles from './MoreDropdown.module.css';
 
@@ -18,7 +18,7 @@ const MoreDropdown = ({ items, ariaLabel = '더보기 버튼' }) => {
   return (
     <Dropdown>
       <Dropdown.Button onClick={handleClickToggle} ariaLabel={ariaLabel}>
-        <Icons.KebabIcon />
+        <icons.KebabIcon />
       </Dropdown.Button>
       <Dropdown.List isOpen={isOpen} className={styles['list-container']}>
         {items.map(({ label, onClick }) => {
