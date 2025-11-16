@@ -1,6 +1,10 @@
 import styles from './Title.module.css';
 
-const Title = ({ children }) => {
+interface TitleProps {
+  children: React.ReactNode;
+}
+
+const Title = ({ children }: TitleProps) => {
   return <h2 className={styles.title}>{children}</h2>;
 };
 
