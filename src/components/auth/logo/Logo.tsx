@@ -2,7 +2,11 @@ import { Link } from 'react-router';
 import logos from '@/assets/logo/logo';
 import styles from './Logo.module.css';
 
-const Logo = ({ link = '/' }) => {
+interface LogoProps {
+  link?: string;
+}
+
+const Logo = ({ link = '/' }: LogoProps) => {
   return (
     <h1 className={styles.container}>
       <Link to={link}>
