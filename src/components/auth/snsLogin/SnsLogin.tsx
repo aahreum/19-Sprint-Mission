@@ -1,4 +1,4 @@
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 import styles from './SnsLogin.module.css';
 
 const SnsLogin = () => {

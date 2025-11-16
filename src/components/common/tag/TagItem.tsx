@@ -1,4 +1,4 @@
-import Icons from '@/assets/icons/icons';
+import Icons from '@/assets/icons';
 import styles from './TagItem.module.css';
 
 const TagItem = ({ tag, onClick }) => {

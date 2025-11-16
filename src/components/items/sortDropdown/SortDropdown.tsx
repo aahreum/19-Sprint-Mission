@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import icons from '@/assets/icons/icons';
+import icons from '@/assets/icons';
 import Dropdown from '@/components/common/dropdown/Dropdown';
 import styles from './SortDropdown.module.css';
 

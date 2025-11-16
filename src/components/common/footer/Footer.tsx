@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import icons from '@/assets/icons/icons';
+import icons from '@/assets/icons';
 import styles from './Footer.module.css';
 
 const Footer = () => {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Icons from '@/assets/icons/icons';
+import Icons from '@/assets/icons';
 import Dropdown from '@/components/common/dropdown/Dropdown';
 import styles from './MoreDropdown.module.css';
 

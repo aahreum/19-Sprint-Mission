@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Link, useParams } from 'react-router';
-import Icons from '@/assets/icons/icons';
+import Icons from '@/assets/icons';
 import Button from '@/components/common/button/Button';
 import CommentForm from '@/components/itemDetail/commentForm/CommentForm';
 import CommentList from '@/components/itemDetail/commentList/CommentList';

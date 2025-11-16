@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { useState } from 'react';
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 import Button from '@/components/common/button/Button';
 import Textarea from '@/components/common/textarea/Textarea';
 import MoreDropdown from '@/components/itemDetail/MoreDropdown/MoreDropdown';

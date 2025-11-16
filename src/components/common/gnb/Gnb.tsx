@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { Link, NavLink, useLocation } from 'react-router';
-import logos from '@/assets/logo/logo';
+import logos from '@/assets/logo';
 import Button from '@/components/common/button/Button';
 import ProfileImg from '@/components/common/profileImg/ProfileImg';
 import styles from './Gnb.module.css';

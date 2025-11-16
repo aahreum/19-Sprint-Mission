@@ -1,4 +1,4 @@
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 
 const ProfileImg = ({ size = 'm' }) => {
   const width = size === 'm' ? 40 : 32;

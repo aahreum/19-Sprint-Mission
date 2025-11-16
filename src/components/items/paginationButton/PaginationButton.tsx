@@ -1,4 +1,4 @@
-import icons from '@/assets/icons/icons';
+import icons from '@/assets/icons';
 import styles from './PaginationButton.module.css';
 
 const PaginationButton = ({ totalCount, pageSize, page, onChangePage }) => {

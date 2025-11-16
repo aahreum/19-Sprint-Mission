@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import icons from '@/assets/icons/icons';
+import icons from '@/assets/icons';
 import ProductImg from '@/components/common/productImg/ProductImg';
 import { formatPrice } from '@/utils/formatPrice';
 import styles from './ProductCard.module.css';

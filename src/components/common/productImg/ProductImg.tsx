@@ -1,4 +1,4 @@
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 import styles from './ProductImg.module.css';
 
 const ProductImg = ({ imgArray }) => {

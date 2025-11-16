@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import images from '@/assets/images/images';
+import images from '@/assets/images';
 import Button from '@/components/common/button/Button';
 import styles from './Banner.module.css';
 

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import Icons from '@/assets/icons/icons';
+import Icons from '@/assets/icons';
 import Label from '@/components/common/label/Label';
 import styles from './ImageFileInput.module.css';
 

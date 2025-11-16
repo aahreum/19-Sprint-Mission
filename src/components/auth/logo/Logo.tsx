@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import logos from '@/assets/logo/logo';
+import logos from '@/assets/logo';
 import styles from './Logo.module.css';
 
 interface LogoProps {
