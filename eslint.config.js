@@ -12,7 +12,7 @@ export default defineConfig([
   globalIgnores(['dist', 'node_modules']),
   eslintConfigPrettier,
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     extends: [
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
@@ -25,12 +25,9 @@ export default defineConfig([
     },
     settings: {
       'import/resolver': {
-        alias: {
-          map: [
-            ['', './public'],
-            ['@', './src'],
-          ],
-          extensions: ['.js', '.jsx'],
+        typescript: {
+          alwaysTryTypes: true,
+          project: './tsconfig.app.json',
         },
       },
     },
