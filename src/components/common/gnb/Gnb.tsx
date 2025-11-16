@@ -1,14 +1,23 @@
 import classNames from 'classnames';
-import { Link, NavLink, useLocation } from 'react-router';
+import {
+  Link,
+  NavLink,
+  useLocation,
+  type NavLinkRenderProps,
+} from 'react-router';
 import logos from '@/assets/logo';
 import Button from '@/components/common/button/Button';
 import ProfileImg from '@/components/common/profileImg/ProfileImg';
 import styles from './Gnb.module.css';
 
-const Gnb = ({ login = true }) => {
+interface GnbProps {
+  login?: boolean;
+}
+
+const Gnb = ({ login = true }: GnbProps) => {
   const location = useLocation();
 
-  const navLinkClassName = ({ isActive }) =>
+  const navLinkClassName = ({ isActive }: NavLinkRenderProps) =>
     classNames({ [styles['menu-active']]: isActive });
 
   const navLinkItemsClassName = () => {
