@@ -1,4 +1,7 @@
 @import 'tailwindcss';
 
 /* color */
-@import './base/color.css'
+@import './base/color.css';
+
+/* typography */
+@import './base/typography.css';
