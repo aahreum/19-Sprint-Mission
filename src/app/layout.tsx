@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '@/styles/globals.css';
+import Header from '@/widgets/header/ui/Header';
 
 export const metadata: Metadata = {
   title: 'Do it',
@@ -13,7 +14,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
-      <body>{children}</body>
+      <head>
+        <link
+          rel='stylesheet'
+          type='text/css'
+          href='https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css'
+        />
+      </head>
+      <body>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
