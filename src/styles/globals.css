@@ -1,11 +1,15 @@
 @import 'tailwindcss';
 
+/* font */
+@import './base/font.css';
+
 /* color */
 @import './base/color.css';
 
 /* typography */
 @import './base/typography.css';
 
+/* 공통 유틸리티 클래스 */
 @utility container {
   @apply mx-auto w-full max-w-[1200px];
 }
