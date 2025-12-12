@@ -23,7 +23,9 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        <main>{children}</main>
+        <main className='mt-[24px] px-[16px]'>
+          <div className='container'>{children}</div>
+        </main>
       </body>
     </html>
   );

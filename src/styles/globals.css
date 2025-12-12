@@ -5,3 +5,7 @@
 
 /* typography */
 @import './base/typography.css';
+
+@utility container {
+  @apply mx-auto w-full max-w-[1200px];
+}
