@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
-import Header from '@/widgets/header/ui/Header';
+import Header from '@/widgets/header/Header';
 
 export const metadata: Metadata = {
   title: 'Do it',
