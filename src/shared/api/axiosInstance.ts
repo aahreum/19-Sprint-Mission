@@ -2,7 +2,7 @@ import axios from 'axios';
 
 interface createInstanceOptions {
   baseURL: string;
-  timeout: number;
+  timeout?: number;
 }
 
 const createInstance = ({ baseURL, timeout = 5000 }: createInstanceOptions) => {
