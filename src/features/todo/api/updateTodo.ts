@@ -1,7 +1,7 @@
 import { UpdateTodoReqBody } from '@/features/todo/model/types';
 import { clientApi } from '@/shared/api/client';
 
-interface UpdateTodoVariables {
+export interface UpdateTodoVariables {
   itemId: number;
   body: UpdateTodoReqBody;
 }
