@@ -7,3 +7,10 @@ export interface TodoList {
 }
 
 export type TodoListResponse = TodoList[];
+
+export interface UpdateTodoReqBody {
+  name: string;
+  memo: string;
+  imageUrl: string;
+  isCompleted: boolean;
+}
