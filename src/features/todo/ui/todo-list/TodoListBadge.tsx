@@ -1,7 +1,8 @@
+import { TodoListStatus } from '@/features/todo/model/types';
 import { cn } from '@/shared/lib/cn';
 
 interface TodoListBadgeProps {
-  status: 'TO DO' | 'DONE';
+  status: TodoListStatus;
 }
 
 export default function TodoListBadge({ status }: TodoListBadgeProps) {
