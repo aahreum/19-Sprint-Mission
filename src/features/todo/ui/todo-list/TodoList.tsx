@@ -21,7 +21,7 @@ export default function TodoList({ status, items }: TodoListProps) {
   };
 
   return (
-    <div className='grow'>
+    <div className='max-w-[588px] grow'>
       <TodoListBadge status={status} />
       <TodoListContainer>
         {items.length === 0 ? (
