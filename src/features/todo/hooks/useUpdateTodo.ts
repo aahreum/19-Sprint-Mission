@@ -1,42 +1,21 @@
 'use client';
 
-import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { updateTodo, UpdateTodoVariables } from '@/features/todo/api/updateTodo';
-import { TodoListResponse, UpdateTodoResponse } from '@/features/todo/model/types';
+import { TodoListResponse, TodoDetail } from '@/features/todo/model/types';
 import { QUERY_KEYS } from '@/shared/constants/queryKey';
-
-interface UpdateContext {
-  previous: TodoListResponse | undefined;
-}
+import { useOptimisticMutation } from '@/shared/hooks/useOptimisticMutation';
 
 export const useUpdateTodo = () => {
-  const queryClient = useQueryClient();
-
-  return useMutation<UpdateTodoResponse, Error, UpdateTodoVariables, UpdateContext>({
+  return useOptimisticMutation<TodoDetail, UpdateTodoVariables, TodoListResponse>({
     mutationFn: updateTodo,
-    onMutate: async ({ itemId, body }) => {
-      await queryClient.cancelQueries({ queryKey: QUERY_KEYS.TODO_LIST });
-
-      const previous = queryClient.getQueryData<TodoListResponse>(QUERY_KEYS.TODO_LIST);
-
-      queryClient.setQueryData<TodoListResponse>(QUERY_KEYS.TODO_LIST, (old) => {
-        if (!old) {
-          return [];
-        }
-        return old.map((item) =>
-          item.id === itemId ? { ...item, isCompleted: body.isCompleted! } : item
-        );
-      });
-
-      return { previous };
-    },
-    onError: (_error, _variables, context) => {
-      if (context?.previous) {
-        queryClient.setQueryData(QUERY_KEYS.TODO_LIST, context.previous);
+    queryKey: QUERY_KEYS.TODO_LIST,
+    optimisticUpdate: (old, { itemId, body }) => {
+      if (!old) {
+        return [];
       }
-    },
-    onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: QUERY_KEYS.TODO_LIST });
+      return old.map((item) =>
+        item.id === itemId ? { ...item, isCompleted: body.isCompleted! } : item
+      );
     },
   });
 };
