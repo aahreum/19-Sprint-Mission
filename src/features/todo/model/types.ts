@@ -8,6 +8,12 @@ export interface TodoList {
 
 export type TodoListResponse = TodoList[];
 
+// create todo type
+export interface CreateTodoReqBody {
+  name: string;
+}
+
+// update todo type
 export interface UpdateTodoReqBody {
   name?: string;
   memo?: string;
