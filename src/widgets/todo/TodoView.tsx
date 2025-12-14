@@ -4,10 +4,11 @@ import { useQuery } from '@tanstack/react-query';
 import { getTodoList } from '@/features/todo/api/getTodoList/client';
 import { TodoListResponse } from '@/features/todo/model/types';
 import TodoList from '@/features/todo/ui/todo-list/TodoList';
+import { QUERY_KEYS } from '@/shared/constants/queryKey';
 
 const TodoView = () => {
   const { data, error, isError, isPending } = useQuery<TodoListResponse>({
-    queryKey: ['todoList'],
+    queryKey: QUERY_KEYS.TODO_LIST,
     queryFn: getTodoList,
   });
 
